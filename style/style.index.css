@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body,
+html {
+  background-color: rgb(29, 40, 58);
+}
+.navigation {
+  width: 100%;
+  padding: 15px 120px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  position: -webkit-sticky;
+  align-items: center;
+  background-color: rgba(29, 40, 58, 0.1);
+  backdrop-filter: blur(1.5rem);
+  border-bottom: 0.5px solid rgba(245, 245, 245, 0.2);
+}
+.navigation > p {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+.submit-botton > a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  background-color: rgba(29, 40, 58, 0.3);
+  display: flex;
+  padding: 60px 120px;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.card-container {
+  margin: 20px 0px 40px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.buttons {
+  display: flex;
+  margin: 0px 8px 0px 0px;
+}
+.success-button {
+  background-color: #16a34a;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.submit-botton {
+  background-color: #2563eb;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+.submit-botton:hover {
+  cursor: pointer;
+  animation-name: addButton;
+  animation-duration: 1s;
+}
+@keyframes addButton {
+  from {
+    background-color: #2563eb;
+  }
+  to {
+    background-color: #93c5fd;
+  }
+}
+.search-botton {
+  background-color: #334155;
+  padding: 11px 10px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.from-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 60px 0px;
+}
+.failed-button {
+  background-color: #b91c1c;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  margin: 0px 0px 0px 8px;
+  cursor: pointer;
+}
+.input-label {
+  border-radius: 8px;
+  background-color: #334155;
+  padding: 5px 10px;
+  border: 0px;
+  margin-right: 10px;
+  width: 500px;
+  color: white;
+  height: 40px;
+}
+.input-label:focus {
+  outline: none;
+  box-shadow: rgba(15, 23, 42, 0.6) 0px 4px 20px 0px;
+  transform: scale(1.025);
+}
+.title {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.titles {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 12px 18px 12px 18px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(15, 23, 42, 1);
+}
+.card:hover {
+  /* transform: scale(1.02); */
+  box-shadow: rgba(15, 23, 42, 0.6) 0px 4px 20px 0px;
+}
+.authors {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.books {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+.author {
+  margin: 0px 8px 0px 0px;
+  color: #a7a7a7;
+  font-size: 12px;
+}
+.realese {
+  color: #a7a7a7;
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .container {
+    height: fit-content;
+    padding: 10px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card {
+    margin: 10px 0px 0px 0px;
+  }
+  .navigation {
+    padding: 10px 20px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .failed-button {
+    margin: 8px 0px 0px 0px;
+  }
+  .from-control {
+    justify-content: space-between;
+    margin: 20px 0px 40px 0px;
+  }
+  .input-label {
+    width: 75%;
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 12px;
+  }
+  .search-botton {
+    font-size: 12px;
+  }
+  .titles {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .submit-botton {
+    font-size: 12px;
+  }
+  .books {
+    max-width: 180px;
+  }
+}

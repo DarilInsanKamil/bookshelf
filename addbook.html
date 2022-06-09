@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Data Book</title>
+    <link rel="stylesheet" href="./style/style.add.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navigation">
+      <p>📚 bookshelf</p>
+      <button class="submit-botton">
+        <a href="./index.html">List Book</a>
+      </button>
+    </nav>
+
+    <main class="container">
+      <h2 class="title">From Tambah Buku</h2>
+      <form class="from" id="form-book">
+        <div class="from-control">
+          <label for="title">Title</label>
+          <input type="text" class="input-label" id="title-input" />
+        </div>
+        <div class="from-control">
+          <label for="author">Author</label>
+          <input type="text" class="input-label" id="author-input" />
+        </div>
+        <div class="from-control">
+          <label for="realese">Realese year</label>
+          <input type="number" class="input-label" id="year-input" />
+        </div>
+        <div>
+          <input type="checkbox" id="check" />
+          <label for="realese">Selesai dibaca</label>
+        </div>
+        <button class="submit-botton" type="submit">Tambah Data</button>
+      </form>
+    </main>
+    <script src="./logic/addBook.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

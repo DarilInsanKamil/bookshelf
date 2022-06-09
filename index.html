@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf App</title>
+    <link rel="stylesheet" href="./style/style.index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navigation">
+      <p>📚 bookshelf</p>
+      <button class="submit-botton">
+        <a href="./addbook.html">Tambah Data</a>
+      </button>
+    </nav>
+    <main class="container" id="container">
+      <div class="from-control">
+        <input
+          type="text"
+          class="input-label"
+          id="search-input"
+          placeholder="Cari berdasarkan judul buku... ex : toko"
+          required
+        />
+        <button class="search-botton" onclick="searchBook()">Cari buku</button>
+      </div>
+      <div id="search">
+        <p class="titles">Sedang dibaca</p>
+        <section class="card-container" id="card-container-unfinish"></section>
+        <p class="titles">Sudah dibaca</p>
+        <section class="card-container" id="card-container-finish"></section>
+      </div>
+    </main>
+    <script src="./logic/listBook.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
