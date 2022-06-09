@@ -1,6 +1,8 @@
 const BOOK_STORAGE = "BOOK_STORAGE";
 let bookStorage = [];
 
+
+
 document.getElementById('form-book').addEventListener('submit', function (e) {
     e.preventDefault()
     const id = new Date().toLocaleTimeString();
@@ -29,8 +31,8 @@ document.getElementById('form-book').addEventListener('submit', function (e) {
         showConfirmButton: false,
         timer: 1500
     })
-    
-    title.value = ' '
-    author.value = ' '
-    year.value = ' '
+
+    title= ''
+    author= ''
+    year= ''
 })

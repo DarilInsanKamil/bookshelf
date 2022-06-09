@@ -39,7 +39,9 @@ function moveBook(el) {
         newBook.push(keys)
       }
       localStorage.setItem(BOOK_STORAGE, JSON.stringify(newBook))
-      location.reload(true)
+      setTimeout(() => {
+        location.reload(true)
+      }, 2000)
     }
   })
 };
@@ -121,7 +123,9 @@ function deleteBook(el) {
       const itemID = document.getElementById(el.id)
       const data = bookStorage.filter(i => i.id !== itemID.id)
       localStorage.setItem(BOOK_STORAGE, JSON.stringify(data))
-      location.reload(true)
+      setTimeout(() => {
+        location.reload(true)
+      }, 2000)
     }
   })
 };
