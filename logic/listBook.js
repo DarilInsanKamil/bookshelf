@@ -11,7 +11,6 @@ for (const key of bookStorage) {
 }
 
 
-// //MEMINDAHKAN BUKU
 function moveBook(el) {
   Swal.fire({
     title: 'Kamu yakin?',
@@ -46,7 +45,6 @@ function moveBook(el) {
   })
 };
 
-//MENAMPILKAN DATA BUKU
 function displayBook(key) {
   let books = `
       <div class="card" id="card" key=${key.id}>
@@ -63,7 +61,6 @@ function displayBook(key) {
         </div>
         </div>
       `;
-  //MEMISAHKAN BUKU
   if (key.isComplete) {
     finishBook.insertAdjacentHTML("afterbegin", books);
   } else {
@@ -72,7 +69,6 @@ function displayBook(key) {
 }
 
 
-//MENCARI BUKU DI SEMUA RAK
 function searchBook() {
   if (searchInput.value !== '') {
     const book = bookStorage.find(item => item.title.toLowerCase().includes(searchInput.value.toLowerCase()));
@@ -102,7 +98,6 @@ function searchBook() {
   }
 };
 
-// //MENGAHPUS BUKU DI RAK
 function deleteBook(el) {
   Swal.fire({
     title: 'Kamu yakin?',

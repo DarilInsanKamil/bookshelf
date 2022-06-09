@@ -135,7 +135,6 @@ html {
   background-color: rgba(15, 23, 42, 1);
 }
 .card:hover {
-  /* transform: scale(1.02); */
   box-shadow: rgba(15, 23, 42, 0.6) 0px 4px 20px 0px;
 }
 .authors {
