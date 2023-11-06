@@ -21,7 +21,7 @@
       </button>
     </nav>
     <main class="container" id="container">
-      <div class="from-control">
+      <form class="from-control" onsubmit="searchBook()">
         <input
           type="text"
           class="input-label"
@@ -29,8 +29,8 @@
           placeholder="Cari berdasarkan judul buku... ex : toko"
           required
         />
-        <button class="search-botton" onclick="searchBook()">Cari buku</button>
-      </div>
+        <button class="search-botton">Cari buku</button>
+      </form>
       <div id="search">
         <p class="titles">Sedang dibaca</p>
         <section class="card-container" id="card-container-unfinish"></section>
